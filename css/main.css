@@ -139,6 +139,20 @@
     	line-height: 1.5em;
     }
 
+    .bottom_nav {
+			display: block;
+			font-size: .625em;
+			margin-top: 2em; 
+			
+		}
+		.bottom_nav li{
+			display: inline;
+		}
+		.bottom_nav_link {
+			width: 6em;
+			padding: 0 1em;
+		}
+
     .super {
     	font-size: .25em;
     	vertical-align: super;
