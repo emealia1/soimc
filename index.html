@@ -283,7 +283,37 @@
 						</li> 
 					</ul>
 				</nav>
+				</footer>
+				<script>
+
+					
+					var outer = 0;
+
+					function moveCarousel(inner){
+						//remove visible from outer
+						var visible = document.getElementsByClassName('visible'),
+							carousel_item = document.getElementsByClassName('carousel_item');
+						visible[0].classList.remove('visible');
+
+						//add visible to inner + 1
+						outer++;
+						carousel_item[inner].classList.add('visible')
+						if(inner == 2){
+							outer = 0
+						}
+					}
+				
+					setInterval(function(){
+						moveCarousel(outer);
+					}, 1000)				
+				// function changeClass(){
+				// document.getElementsByClassName('carousel_item visible') = document.getElementsByClassName('carousel_item visible').replace ( /(?:^|\s)visible(?!\s)/g , '' )
+				// document.getElementsByClassName(carousel.carousel_item[1] += " visible")})
+				
+
+			
+				</script>
 	</body>
-		</footer>
+		
 		
 </html>
