@@ -22,18 +22,24 @@
 			min-height: 80px;
 		}
 
+			#btn_home {
+				display: block;
+				min-width: 10em;
+				margin: 2em auto 0;
+				padding: 0 0 1em;
+			}
+
 		.btn {
 			display: block;
 			float: left;
 			text-align: center;
 			background: #003d79;
 			color: white;
+			width: 100%;
+			margin: 0 0 4px;
+			border-radius: 0;
 			padding: 1em 0;
-			margin: 1em .25em;
-			width: 7.45em;
-			border-radius: 0.375em;
 			text-decoration: none;
-			border: 1px solid #003d79;
 		}
 
 		.btn_current {
@@ -62,16 +68,15 @@
 				display: block;
 			}
 
-			.carousel_img {
+			.carousel_img, .carousel_video {
+				display: block;
 				width: 100%;
 			}
 
 			.carousel_link {
 				position: absolute;
 				width: 60%;
-				line-height: 1.125em;
 				padding: 1em;
-				color: white;
 				text-decoration: none;
 			}
 
@@ -91,6 +96,7 @@
 		.round_tl {
 			border-top-left-radius: 0.75em;
 		}
+
 		.text_white {
 			color: white;
 		}
@@ -113,10 +119,6 @@
 
 		.clear_left {
 			clear: left;
-		}
-
-		.margin_bottom_3 {
-			margin-bottom: 3px;
 		}
 
 	#wrap {
@@ -154,56 +156,48 @@
 		}
 
     .super {
-    	font-size: .25em;
-    	vertical-align: super;
+    	font-size: .75em;
+    	vertical-align: top;
     }
 
- body:after {
-  content: "Default";
-  left: 50%;
-  position: fixed;
-  top: 0;
-}
- 
-@media only screen and (max-width: 600px) {
-  body:after {
-    content: "Small";
-  }
-    	nav {
-    		margin: 2em 0;
-    		display: inline-block;
-    		width: 90%;
-    		margin: 2em 5%;
-    	}
+ @media only screen and (max-width: 768px) {
+	nav {
+		margin: 2em 5%;
+		display: inline-block;
+		width: 90%;
+	}
 
-    	.btn {
-    		clear: both;
-    		width: 100%;
-    		margin: 0 0 4px;
-    		border-radius: 0;
-			outline: 1px solid #003d79;
-			border: 1px solid #003d79;
-    	}
+	#btn_home {
+		width: 50%;
+		padding: 0 0 2em;
+	}
 
-		.btn_current {
-			margin: 0 0 6px;
-			border: 1px solid #003d79;
+		#btn_home img {
+			width: 100%;
 		}
 
-    	.carousel p {
-    		font-size: 1em;
-    	}
+	.btn {
+		clear: both;
+		outline: 1px solid #003d79;
+		border: 1px solid #003d79;
+	}
 
-}
- 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  body:after {
-    content: "Medium";
-  }
+	.btn_current {
+		margin: 0 0 6px;
+		border: 1px solid #003d79;
+	}
+
+	.carousel p {
+		font-size: 1em;
+	}
 }
  
 @media only screen and (min-width: 769px) {
-  body:after {
-    content: "Large";
-  }
+	.btn {
+		padding: 1em 0;
+		margin: 1em .25em;
+		width: 7.45em;
+		border-radius: 0.375em;
+	}
+
 }
