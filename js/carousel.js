@@ -52,12 +52,13 @@ console.log('<0: ' + currentlyVisible);
 			nextVisible = currentlyVisible;
 			return nextVisible;
 		} else {
-console.log(currentlyVisible)
+console.log(currentlyVisible);
 			moveCarousel(currentlyVisible);
 			nextVisible = currentlyVisible;
 			return nextVisible;
 		}
 	};
+
 	if(carouselVideo) {
 		carouselVideo.addEventListener('play', function() {
 			stopCarousel();
