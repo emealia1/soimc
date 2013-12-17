@@ -21,13 +21,13 @@ module.exports = function(grunt) {
 			}
 		}, 'gh-pages': {
 			options: {
-			  base: ''
+				base: '',
+				user: {
+					name: 'Kyle Kinnaman',
+					email: 'kyle.kinnaman@ksuwdc.com'
+				}
 			},
-			src: ['**'],
-			user: {
-				name: 'Kyle Kinnaman',
-				email: 'kyle.kinnaman@ksuwdc.com'
-			}
+			src: ['**']
 		}, imagemin: {
 			dynamic: {
 				files: [{
