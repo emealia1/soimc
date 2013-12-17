@@ -64,5 +64,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-gh-pages');
 	grunt.loadNpmTasks('grunt-styleguide');
-	grunt.registerTask('default', ['imagemin', 'concat', 'uglify', 'cssmin', 'styleguide', 'gh-pages']);
+	grunt.registerTask('default', ['imagemin', 'concat', 'uglify', 'cssmin']);
 };
