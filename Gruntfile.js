@@ -23,7 +23,11 @@ module.exports = function(grunt) {
 			options: {
 			  base: ''
 			},
-			src: ['**']
+			src: ['**'],
+			user: {
+				name: 'Kyle Kinnaman',
+				email: 'kyle.kinnaman@ksuwdc.com'
+			}
 		}, imagemin: {
 			dynamic: {
 				files: [{
